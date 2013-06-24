@@ -123,6 +123,8 @@ function bcdev_register_custom_post_types() {
 			'supports' => array('title', 'thumbnail', 'editor'),
 			/**defining custom fields**/
 			'register_meta_box_cb' => 'add_tm_metaboxes',
+			/**define category for this post type**/
+			'taxonomies' => array('team-member'),
 		);
 
 
